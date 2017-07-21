@@ -79,3 +79,28 @@
     }
   }
 }
+#page {
+  width: 100%;
+  min-height: 100vh;
+  @include flexbox();
+  @include flexbox-direction(column);
+  @include flexbox-justify(stretch);
+  @include flexbox-align-content(stretch);
+  @include flexbox-align-items(stretch);
+  @media screen and (min-width: $tabwidth){
+    @include flexbox-direction(row);
+  }
+  #masthead {
+    @include flexbox-flex(1,0,auto);
+    @media screen and (min-width: $tabwidth){
+      width: 30%;
+      min-width: 200px;
+    }
+  }
+  #content {
+    @include flexbox-flex(1,1,auto);
+    @media screen and (min-width: $tabwidth){
+      width: 70%;
+    }
+  }
+}
