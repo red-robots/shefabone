@@ -16,7 +16,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*//*!
+*/@import url("https://fonts.googleapis.com/css?family=Rubik:400,700");/*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -587,7 +587,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:black;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:#505a5b;font-family:"Rubik",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -721,32 +721,68 @@ html[xmlns] .flexslider .slides{display:block}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
 .clear-bottom:after{clear:both;display:block;content:""}
-.copy{font-size:16px;color:black}
+.copy{font-size:16px;color:#505a5b}
 @media screen and (min-width:600px){.copy{font-size:18px}
 }.copy>*:first-child{margin-top:0;padding-top:0}
 .copy>*:last-child{margin-bottom:0;padding-bottom:0}
 .copy p{margin:20px 0}
 .copy strong,.copy b,.copy em{font-weight:700}
-.copy a{text-decoration:none;color:black;position:relative}
-.copy a:hover{color:black}
-.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:black}
+.copy a{text-decoration:none;color:#505a5b;position:relative}
+.copy a:hover{color:#505a5b}
+.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#505a5b}
 .copy h1{font-size:25px}
 @media screen and (min-width:600px){.copy h1{font-size:30px}
 }.copy h2{font-size:20px}
 @media screen and (min-width:600px){.copy h2{font-size:25px}
-}.copy h3{font-size:18px;color:black}
+}.copy h3{font-size:18px;color:#505a5b}
 @media screen and (min-width:600px){.copy h3{font-size:20px}
 }.copy ul,.copy ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
 .copy ul li,.copy ol li{margin:0 0 0 20px;font-size:inherit;padding:0;list-style-type:square}
-.copy ul li a,.copy ol li a{cursor:pointer;color:black}
-.copy ul li a:hover,.copy ol li a:hover{color:black}
+.copy ul li a,.copy ol li a{cursor:pointer;color:#505a5b}
+.copy ul li a:hover,.copy ol li a:hover{color:#505a5b}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
 #page{width:100%;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-justify-content:stretch;-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 @media screen and (min-width:600px){#page{-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-}#page #masthead{-webkit-box-flex:1 0 auto;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}
-@media screen and (min-width:600px){#page #masthead{width:30%;min-width:200px}
-}#page #content{-webkit-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}
-@media screen and (min-width:600px){#page #content{width:70%}
+}#page #masthead{-webkit-box-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;padding:20px}
+@media screen and (min-width:600px){#page #masthead{width:200px;border-right:1px solid #505a5b}
+}#page #masthead>.wrapper .logo{margin:0 0 30px 0}
+#page #masthead>.wrapper .logo a{display:block}
+#page #masthead>.wrapper .logo a img{display:block}
+#page #masthead>.wrapper #site-navigation{text-align:center}
+@media screen and (min-width:600px){#page #masthead>.wrapper #site-navigation{text-align:left}
+}#page #masthead>.wrapper #site-navigation.toggled .menu-primary-container{display:block}
+#page #masthead>.wrapper #site-navigation button{display:inline-block;background-color:#505a5b;color:white;border:0;text-shadow:none;box-shadow:none;padding:10 20px;font-size:20px}
+@media screen and (min-width:600px){#page #masthead>.wrapper #site-navigation button{display:none}
+}#page #masthead>.wrapper #site-navigation .menu-primary-container{display:none}
+@media screen and (min-width:600px){#page #masthead>.wrapper #site-navigation .menu-primary-container{display:block}
+}#page #masthead>.wrapper #site-navigation .menu-primary-container ul{margin:0;padding:0}
+#page #masthead>.wrapper #site-navigation .menu-primary-container ul li{display:block;margin:20px 0}
+#page #masthead>.wrapper #site-navigation .menu-primary-container ul li a{color:inherit;font-size:20px;text-decoration:none}
+#page #masthead>.wrapper #site-navigation .menu-primary-container ul li a:hover{color:#76c2b6}
+#page #masthead>.wrapper .social{text-align:center;margin:20px 0 0 0}
+@media screen and (min-width:600px){#page #masthead>.wrapper .social{text-align:left}
+}#page #masthead>.wrapper .social a{display:inline-block;color:#505a5b;text-decoration:none;font-size:30px}
+#page #masthead>.wrapper .social a:hover{color:#76c2b6}
+#page #content{-webkit-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}
+@media screen and (min-width:600px){#page #content{width:calc(100% - 200px)}
+}#page #content #primary,#page #content #main{height:100%}
+.template-index{height:100%;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-justify-content:stretch;-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+@media screen and (max-width:599px){.template-index{background-image:none !important}
+}@media screen and (min-width:600px){.template-index{background-position:center;background-size:cover}
+}.template-index>img.mobile{display:block;width:100%}
+@media screen and (min-width:600px){.template-index>img.mobile{display:none}
+}.template-index>.row-1{width:100%;margin-bottom:auto;padding:20px}
+@media screen and (min-width:600px){.template-index>.row-1{padding:6% 2% 0 15%}
+}.template-index>.row-1>.col-1 header h1{margin:0}
+.template-index>.row-2{width:100%;padding:20px}
+@media screen and (min-width:600px){.template-index>.row-2{padding:6% 6% 6% 15%}
+}@media screen and (min-width:1200px){.template-index>.row-2{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+}.template-index>.row-2 .button{display:block;margin:20px 0;text-align:center}
+@media screen and (min-width:1200px){.template-index>.row-2 .button{-webkit-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;min-width:200px;margin:0 20px}
+}.template-index>.row-2 .button a{border:1px solid #505a5b;padding:10px;font-size:18px;text-transform:uppercase;display:block;text-decoration:none;color:#505a5b}
+.template-index>.row-2 .button a:hover{border:1px solid #76c2b6;color:#76c2b6}
+@media screen and (min-width:600px){.template-index>.row-2 .button a{border:1px solid white;color:white}
+.template-index>.row-2 .button a:hover{border:1px solid white;color:white}
 }.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

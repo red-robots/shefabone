@@ -27,11 +27,11 @@
 		<div class="wrapper">
 			<?php if(is_home()): ?>
 	            <h1 class="logo">	
-		            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
+		            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="<?php bloginfo('name'); ?>"></a>
 	            </h1>
 	        <?php else: ?>
 	            <div class="logo">
-		            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
+		            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="<?php bloginfo('name'); ?>"></a>
 	            </div>
 	        <?php endif; ?>
 
@@ -39,6 +39,16 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'acstarter' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<?php $linkedin_link = get_field("linkedin_link","option");
+			if($linkedin_link):?>
+				<div class="social">
+					<?php if($linkedin_link):?>
+						<a href="<?php echo $linkedin_link;?>">
+							<i class="fa fa-linkedin-square"></i>
+						</a>
+					<?php endif;?>
+				</div><!--.social-->
+			<?php endif;?>
 		</div><!-- wrapper -->
 	</header><!-- #masthead -->
 

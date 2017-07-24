@@ -1,0 +1,96 @@
+.template-index {
+    height: 100%;
+    @include flexbox();
+    @include flexbox-direction(column);
+    @include flexbox-justify(stretch);
+    @include flexbox-align-content(stretch);
+    @include flexbox-align-items(stretch);
+    @media screen and (max-width: $tabwidth - 1px){
+        background-image: none !important;
+    }
+    @media screen and (min-width: $tabwidth){
+        background-position: center;
+        background-size: cover;
+    }
+    >img.mobile {
+        display: block;
+        width: 100%;
+        @media screen and (min-width: $tabwidth){
+            display: none;
+        }
+    }
+    >.row-1 {
+        width: 100%;
+        margin-bottom: auto;
+        padding: 20px;
+        @media screen and (min-width: $tabwidth){
+            padding: 6% 2% 0 15%;
+        }
+        >.col-1 {
+            header {
+                h1 {
+                    margin: 0;
+                }
+            }
+            .sub-heading {
+
+            }
+            .copy {
+
+            }
+            .learn-more {
+                a {
+
+                }
+            }
+        }
+        >.col-2 {
+
+        }
+    }
+    >.row-2 {
+        width: 100%;
+        padding: 20px;
+        @media screen and (min-width: $tabwidth){
+            padding: 6% 6% 6% 15%;
+        }
+        @media screen and (min-width: $deskwidth){
+            @include flexbox();
+            @include flexbox-direction(row);
+            @include flexbox-justify(space-between);
+            @include flexbox-align-content(center);
+            @include flexbox-align-items(center);
+        }
+        .button {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+            @media screen and (min-width: $deskwidth){
+                @include flexbox-flex(0,1,auto);
+                min-width: 200px;
+                margin: 0 20px;
+            }
+            a { 
+                border: 1px solid $color__shefa-gray;
+                padding: 10px;
+                font-size: 18px;
+                text-transform: uppercase;
+                display: block;
+                text-decoration: none;
+                color: $color__shefa-gray;
+                &:hover {
+                    border: 1px solid $color__shefa-green;
+                    color: $color__shefa-green;
+                }
+                @media screen and (min-width: $tabwidth){
+                    border: 1px solid white;
+                    color: white;
+                    &:hover {
+                        border: 1px solid white;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}	

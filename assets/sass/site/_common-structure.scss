@@ -91,16 +91,93 @@
     @include flexbox-direction(row);
   }
   #masthead {
-    @include flexbox-flex(1,0,auto);
+    @include flexbox-flex(0,0,auto);
+    padding: 20px;
     @media screen and (min-width: $tabwidth){
-      width: 30%;
-      min-width: 200px;
+      width: 200px;
+      border-right: 1px solid $color__shefa-gray;
+    }
+    >.wrapper {
+      .logo {
+        margin: 0 0 30px 0;
+        a {
+          display: block;
+          img {
+            display: block;
+          }
+        }
+      }
+      #site-navigation {
+        text-align: center;
+        @media screen and (min-width: $tabwidth){
+          text-align: left;
+        }
+        &.toggled {
+          .menu-primary-container {
+            display: block;
+          }
+        }
+        button {
+          display: inline-block;
+          background-color: $color__shefa-gray;
+          color: white;
+          border: none;
+          text-shadow: none;
+          box-shadow: none;
+          padding: 10 20px;
+          font-size: 20px;
+          @media screen and (min-width: $tabwidth){
+            display: none;
+          }
+        }
+        .menu-primary-container {
+          display: none;
+          @media screen and (min-width: $tabwidth){
+            display: block;
+          }
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              display: block;
+              margin: 20px 0;
+              a {
+                color: inherit;
+                font-size: 20px;
+                text-decoration: none;
+                &:hover {
+                  color: $color__shefa-green;
+                }
+              }
+            }
+          }
+        }
+      }
+      .social {
+        text-align: center;
+        margin: 20px 0 0 0;
+        @media screen and (min-width: $tabwidth){
+          text-align: left;
+        }
+        a {
+          display: inline-block;
+          color: $color__shefa-gray;
+          text-decoration: none;
+          font-size: 30px;
+          &:hover {
+            color: $color__shefa-green;
+          }
+        }
+      }
     }
   }
   #content {
     @include flexbox-flex(1,1,auto);
     @media screen and (min-width: $tabwidth){
-      width: 70%;
+      width: calc(100% - 200px);
+    }
+    #primary, #main {
+      height: 100%;
     }
   }
 }
