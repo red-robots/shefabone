@@ -69,4 +69,19 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	new WOW().init();
 
+	$('#search-icon').click(function(){
+		var $this = $(this);
+		var $font_awesome = $this.find("i.fa");
+		$search_form = $this.parents('.form-search').eq(0);
+		if($search_form.hasClass("toggled")){
+			$search_form.removeClass('toggled');
+			$font_awesome.removeClass("fa-close");
+			$font_awesome.addClass("fa-search");
+		} else {
+			$search_form.addClass('toggled');
+			$font_awesome.addClass("fa-close");
+			$font_awesome.removeClass("fa-search");
+		}
+	});
+
 });// END #####################################    END

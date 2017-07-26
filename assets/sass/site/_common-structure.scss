@@ -181,3 +181,118 @@
     }
   }
 }
+.main-row {
+  width: 100%;
+  margin-bottom: auto;
+  padding: 20px;
+  @media screen and (min-width: $tabwidth){
+    padding: 6% 2% 0 14%;
+  }
+  >.row-1 {
+    margin: 0 0 30px 0;
+    @media screen and (min-width: $midwidth){
+      @include flexbox();
+      @include flexbox-direction(row);
+      @include flexbox-justify(space-between);
+      @include flexbox-align-content(center);
+      @include flexbox-align-items(center);
+    }
+    >.col-1 {
+      @media screen and (min-width: $midwidth){
+        max-width: 50%;
+      }
+      header {
+        h1 {
+          margin: 0;
+          font-size: 35px;
+          @media screen and (min-width: $tabwidth){
+              font-size: 50px;
+          }
+        }
+        .spacer {
+          width: 150px;
+          border-bottom: 1px solid $color__shefa-gray;
+        }
+      }
+    }
+    >.col-2 {
+      text-align: left;
+      margin: 20px 0 0 0;
+      @media screen and (min-width: $midwidth){
+        text-align: right;
+        @include flexbox-flex(1,1,auto);
+        margin: 0;
+      }
+      .form-search {
+        position: relative;
+        &.toggled {
+            >form {
+                display: block;
+            }
+        }
+        #search-icon {
+          font-size: 25px;
+          display: block;
+          @media screen and (min-width: $midwidth){
+            font-size: 35px;
+          }
+        }
+        >form {
+          display: none;
+          @media screen and (min-width: $midwidth){
+            position: absolute;
+            top: -10px;
+            right: 45px;
+            width: calc(100% - 45px);
+          }
+          input[type=text] {
+            margin: 10px 0 0 0;
+            padding: 10px;
+            line-height: 1.2;
+            max-width: 100%;
+            border: 1px solid $color__shefa-gray;
+            
+            &:-moz-placeholder {
+                color: $color__shefa-gray;
+            }
+            &::-moz-placeholder {
+                color: $color__shefa-gray;
+            }
+            &:-ms-input-placeholder {
+                color: $color__shefa-gray;
+            }
+            &::-webkit-input-placeholder {
+                color: $color__shefa-gray;
+            }
+          }
+          input[type=submit] {
+            margin: 10px 0 0 0;
+            max-width: 100%;
+            padding: 10px;
+            color: white;
+            background-color: $color__shefa-blue;
+            border: none;
+            text-shadow: none;
+            box-shadow: none;
+            font-size: 16px;
+            line-height: 1.2;
+            
+          }
+        }
+      }
+    }
+  }
+  >.row-2 {
+    >.col-1 {
+      @media screen and (min-width: $midwidth){
+        width: 60%;
+      }
+      .copy {
+        margin-top: 10px;
+        h2 {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

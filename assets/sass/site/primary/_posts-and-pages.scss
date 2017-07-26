@@ -20,39 +20,40 @@
         }
     }
     >.row-1 {
-        width: 100%;
-        margin-bottom: auto;
-        padding: 20px;
-        @media screen and (min-width: $tabwidth){
-            padding: 6% 2% 0 15%;
-        }
-        >.col-1 {
-            header {
-                h1 {
-                    margin: 0;
+        >.row-2 {
+            >.col-1 {
+                @media screen and (min-width: $midwidth){
+                    width: 50%;
+                }
+                .sub-heading {
+                    font-size: 23px;
+                    font-weight: 300;
+                    margin-top: 10px;
+                }
+                .learn-more {
+                    margin-top: 40px;
+                    text-align: center;
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        border: 1px solid $color__shefa-gray;
+                        color: $color__shefa-gray;
+                        padding: 10px;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: $color__shefa-gray;
+                        }
+                    }
                 }
             }
-            .sub-heading {
-
-            }
-            .copy {
-
-            }
-            .learn-more {
-                a {
-
-                }
-            }
-        }
-        >.col-2 {
-
         }
     }
     >.row-2 {
         width: 100%;
-        padding: 20px;
+        padding: 0 20px 20px 20px;
         @media screen and (min-width: $tabwidth){
-            padding: 6% 6% 6% 15%;
+            padding: 6% 6% 6% 14%;
         }
         @media screen and (min-width: $deskwidth){
             @include flexbox();
@@ -65,6 +66,9 @@
             display: block;
             margin: 20px 0;
             text-align: center;
+            &:first-child {
+                margin: 0 0 20px 0;
+            }
             @media screen and (min-width: $deskwidth){
                 @include flexbox-flex(0,1,auto);
                 min-width: 200px;
