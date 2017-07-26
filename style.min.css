@@ -745,8 +745,10 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){#page{-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 }#page #masthead{-webkit-box-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;padding:20px}
 @media screen and (min-width:600px){#page #masthead{width:200px;border-right:1px solid #505a5b}
-}#page #masthead>.wrapper .logo{margin:0 0 30px 0}
-#page #masthead>.wrapper .logo a{display:block}
+}#page #masthead>.wrapper .logo{margin:0 auto 30px auto;width:100%}
+@media screen and (min-width:350px){#page #masthead>.wrapper .logo{width:70%}
+}@media screen and (min-width:600px){#page #masthead>.wrapper .logo{width:100%}
+}#page #masthead>.wrapper .logo a{display:block}
 #page #masthead>.wrapper .logo a img{display:block}
 #page #masthead>.wrapper #site-navigation{text-align:center}
 @media screen and (min-width:600px){#page #masthead>.wrapper #site-navigation{text-align:left}
