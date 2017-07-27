@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-sitemap"); ?>>
-	<div class="row-1 main-row">
+	<section class="row-1 main-row">
 		<div class="row-1">
 			<div class="col-1">
 				<header>
@@ -18,9 +18,9 @@
 					<div class="spacer"></div>
 				</header>
 			</div><!--.col-1-->
-			<div class="col-2">
+			<aside class="col-2">
 				<?php get_template_part('template-parts/search',"form");?>
-			</div><!--.col-2-->
+			</aside><!--.col-2-->
 		</div><!--.row-1-->
 		<div class="row-2">
 			<div class="col-1">
@@ -30,5 +30,5 @@
 				</div><!--.copy-->
 			</div><!--.col-1-->
 		</div><!--.row-2-->
-	</div><!--.row-1-->
+	</section><!--.row-1-->
 </article><!-- #post-## -->

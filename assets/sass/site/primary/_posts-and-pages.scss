@@ -1,10 +1,5 @@
 .template-index {
     height: 100%;
-    @include flexbox();
-    @include flexbox-direction(column);
-    @include flexbox-justify(stretch);
-    @include flexbox-align-content(stretch);
-    @include flexbox-align-items(stretch);
     @media screen and (max-width: $tabwidth - 1px){
         background-image: none !important;
     }
@@ -20,81 +15,111 @@
         }
     }
     >.row-1 {
-        >.row-2 {
-            >.col-1 {
-                @media screen and (min-width: $midwidth){
-                    width: 50%;
+        >.col-1 {
+            padding: 20px;
+            @media screen and (min-width: $tabwidth){
+                padding: 4%;
+                color: white;
+            }
+            @media screen and (min-width: $midwidth){
+                padding: 5% 0 3% 12%;
+                width: 60%;
+                float: left;
+            }
+            @media screen and (min-width: $widewidth){
+                width: 50%;
+            }
+            header {
+                h1 {
+                    margin: 0;
+                    font-size: 35px;
+                    @media screen and (min-width: $tabwidth){
+                        font-size: 50px;
+                    }
                 }
-                .sub-heading {
-                    font-size: 23px;
-                    font-weight: 300;
-                    margin-top: 10px;
+            }
+            .copy {
+                margin-top: 10px;
+                @media screen and (min-width: $tabwidth){
+                    color: white;
+                    & h2 {
+                        color: white;
+                    }
                 }
-                .learn-more {
-                    margin-top: 40px;
-                    text-align: center;
-                    a {
-                        display: inline-block;
-                        text-decoration: none;
-                        border: 1px solid $color__shefa-gray;
+            }
+            .sub-heading {
+                font-size: 23px;
+                font-weight: 300;
+                margin-top: 10px;
+            }
+            .learn-more {
+                margin-top: 40px;
+                text-align: center;
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    border: 1px solid $color__shefa-gray;
+                    color: $color__shefa-gray;
+                    padding: 10px;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    &:hover {
                         color: $color__shefa-gray;
-                        padding: 10px;
-                        font-size: 18px;
-                        text-transform: uppercase;
+                    }
+                    @media screen and (min-width: $tabwidth){
+                        border: 1px solid white;
+                        color: $color__shefa-gray;
+                        background-color: white;
                         &:hover {
+                            border: 1px solid white;
                             color: $color__shefa-gray;
                         }
                     }
                 }
             }
         }
-    }
-    >.row-2 {
-        width: 100%;
-        padding: 0 20px 20px 20px;
-        @media screen and (min-width: $tabwidth){
-            padding: 6% 6% 6% 14%;
-        }
-        @media screen and (min-width: $deskwidth){
-            @include flexbox();
-            @include flexbox-direction(row);
-            @include flexbox-justify(space-between);
-            @include flexbox-align-content(center);
-            @include flexbox-align-items(center);
-        }
-        .button {
-            display: block;
-            margin: 20px 0;
-            text-align: center;
-            &:first-child {
-                margin: 0 0 20px 0;
+        >.col-2 {
+            padding: 0 20px 20px 20px;
+            @media screen and (min-width: $tabwidth){
+                padding: 2%;
+            }
+            @media screen and (min-width: $midwidth){
+                width: 30%;
+                float: right;
             }
             @media screen and (min-width: $deskwidth){
-                @include flexbox-flex(0,1,auto);
-                min-width: 200px;
-                margin: 0 20px;
+                width: 350px;
             }
-            a { 
-                border: 1px solid $color__shefa-gray;
-                padding: 10px;
-                font-size: 18px;
-                text-transform: uppercase;
+            .button {
                 display: block;
-                text-decoration: none;
-                color: $color__shefa-gray;
-                &:hover {
-                    border: 1px solid $color__shefa-green;
-                    color: $color__shefa-green;
+                margin: 20px 0;
+                text-align: center;
+                &:first-child {
+                    margin: 0 0 20px 0;
                 }
-                @media screen and (min-width: $tabwidth){
-                    border: 1px solid white;
-                    color: white;
+                a { 
+                    border: 1px solid $color__shefa-gray;
+                    padding: 10px;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    display: block;
+                    text-decoration: none;
+                    color: $color__shefa-gray;
                     &:hover {
+                        border: 1px solid $color__shefa-green;
+                        color: $color__shefa-green;
+                    }
+                    @media screen and (min-width: $tabwidth){
                         border: 1px solid white;
                         color: white;
+                        &:hover {
+                            border: 1px solid white;
+                            color: white;
+                        }
                     }
                 }
             }
         }
     }
+    
 }	

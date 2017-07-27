@@ -24,52 +24,43 @@ $background_image = get_field("background_image");
 	<?php if($background_image):?>
 		<img class="mobile" src="<?php echo $background_image['sizes']['medium'];?>" alt="<?php echo $background_image['alt'];?>">
 	<?php endif;?>
-	<div class="row-1 main-row">
-		<div class="row-1">
-			<div class="col-1">
-				<?php if($title):?>
-					<header>
-						<h1><?php echo $title;?></h1>
-					</header>
-				<?php endif;?>
-			</div><!--.col-1-->
-			<div class="col-2">
-				<?php get_template_part('template-parts/search',"form");?>
-			</div><!--.col-2-->
-		</div><!--.row-1-->
-		<div class="row-2">
-			<div class="col-1">
-				<?php if($sub_heading):?>
-					<div class="sub-heading">
-						<?php echo $sub_heading;?>
-					</div><!--.sub-heading-->
-				<?php endif;?>
-				<?php if($copy):?>
-					<div class="copy">
-						<?php echo $copy;?>
-					</div><!--.copy-->
-				<?php endif;?>
-				<?php if($learn_more_link&&$learn_more_text):?>
-					<div class="learn-more">
-						<a href="<?php echo $learn_more_link;?>">
-							<?php echo $learn_more_text;?>
-						</a>
-					</div><!--.learn-more-->
-				<?php endif;?>
-			</div><!--.col-1-->
-		</div><!--.row-2-->
+	<div class="row-1 clear-bottom">
+		<section class="col-1">
+			<?php if($title):?>
+				<header>
+					<h1><?php echo $title;?></h1>
+				</header>
+			<?php endif;?>
+			<?php if($sub_heading):?>
+				<div class="sub-heading">
+					<?php echo $sub_heading;?>
+				</div><!--.sub-heading-->
+			<?php endif;?>
+			<?php if($copy):?>
+				<div class="copy">
+					<?php echo $copy;?>
+				</div><!--.copy-->
+			<?php endif;?>
+			<?php if($learn_more_link&&$learn_more_text):?>
+				<div class="learn-more">
+					<a href="<?php echo $learn_more_link;?>">
+						<?php echo $learn_more_text;?>
+					</a>
+				</div><!--.learn-more-->
+			<?php endif;?>
+		</section><!--.col-1-->
+		<?php if($bottom_buttons):?>
+			<aside class="col-2">
+				<?php foreach($bottom_buttons as $row):
+					if($row['button_link']&&$row['button_text']):?>
+						<div class="button">
+							<a href="<?php echo $row['button_link'];?>">
+								<?php echo $row['button_text'];?>
+							</a>
+						</div><!--.button-->
+					<?php endif;
+				endforeach;?>
+			</aside><!--.col-2-->
+		<?php endif;?>
 	</div><!--.row-1-->
-	<?php if($bottom_buttons):?>
-		<div class="row-2">
-			<?php foreach($bottom_buttons as $row):
-				if($row['button_link']&&$row['button_text']):?>
-					<div class="button">
-						<a href="<?php echo $row['button_link'];?>">
-							<?php echo $row['button_text'];?>
-						</a>
-					</div><!--.button-->
-				<?php endif;
-			endforeach;?>
-		</div><!--.row-2-->
-	<?php endif;?>
 </article><!-- #post-## -->
