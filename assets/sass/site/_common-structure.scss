@@ -92,9 +92,9 @@
   }
   #masthead {
     @include flexbox-flex(0,0,auto);
-    padding: 20px;
+    padding: 20px 30px;
     @media screen and (min-width: $tabwidth){
-      width: 200px;
+      width: 250px;
       border-right: 1px solid $color__shefa-gray;
     }
     >.wrapper {
@@ -181,7 +181,7 @@
   #content {
     @include flexbox-flex(1,1,auto);
     @media screen and (min-width: $tabwidth){
-      width: calc(100% - 200px);
+      width: calc(100% - 250px);
     }
     #primary, #main {
       height: 100%;

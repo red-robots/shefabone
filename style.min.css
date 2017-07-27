@@ -743,8 +743,8 @@ html[xmlns] .flexslider .slides{display:block}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
 #page{width:100%;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-justify-content:stretch;-webkit-box-pack:stretch;-ms-flex-pack:stretch;justify-content:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
 @media screen and (min-width:600px){#page{-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-}#page #masthead{-webkit-box-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;padding:20px}
-@media screen and (min-width:600px){#page #masthead{width:200px;border-right:1px solid #505a5b}
+}#page #masthead{-webkit-box-flex:0 0 auto;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;padding:20px 30px}
+@media screen and (min-width:600px){#page #masthead{width:250px;border-right:1px solid #505a5b}
 }#page #masthead>.wrapper .logo{margin:0 auto 30px auto;width:100%}
 @media screen and (min-width:350px){#page #masthead>.wrapper .logo{width:70%}
 }@media screen and (min-width:600px){#page #masthead>.wrapper .logo{width:100%}
@@ -766,7 +766,7 @@ html[xmlns] .flexslider .slides{display:block}
 }#page #masthead>.wrapper .social a{display:inline-block;color:#505a5b;text-decoration:none;font-size:30px}
 #page #masthead>.wrapper .social a:hover{color:#76c2b6}
 #page #content{-webkit-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}
-@media screen and (min-width:600px){#page #content{width:calc(100% - 200px)}
+@media screen and (min-width:600px){#page #content{width:calc(100% - 250px)}
 }#page #content #primary,#page #content #main{height:100%}
 .main-row{width:100%;margin-bottom:auto;padding:20px}
 @media screen and (min-width:600px){.main-row{padding:6% 2% 0 14%}
