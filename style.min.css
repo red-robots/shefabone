@@ -773,7 +773,7 @@ html[xmlns] .flexslider .slides{display:block}
 .main-row{width:100%;margin-bottom:auto;padding:20px}
 @media screen and (min-width:900px){.main-row{padding:6% 0}
 }.main-row>.row-1{margin:0 0 30px 0}
-@media screen and (min-width:900px){.main-row>.row-1{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 2% 0 14%}
+@media screen and (min-width:900px){.main-row>.row-1{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0 2% 0 12%}
 }@media screen and (min-width:900px){.main-row>.row-1>.col-1{max-width:50%}
 }.main-row>.row-1>.col-1 header h1{margin:0;font-size:35px}
 @media screen and (min-width:600px){.main-row>.row-1>.col-1 header h1{font-size:50px}
@@ -792,7 +792,7 @@ html[xmlns] .flexslider .slides{display:block}
 .main-row>.row-1>.col-2 .form-search>form input[type=text]:-ms-input-placeholder{color:#505a5b}
 .main-row>.row-1>.col-2 .form-search>form input[type=text]::-webkit-input-placeholder{color:#505a5b}
 .main-row>.row-1>.col-2 .form-search>form input[type=submit]{margin:10px 0 0 0;max-width:100%;padding:10px;color:white;background-color:#505a5b;border:0;text-shadow:none;box-shadow:none;font-size:16px;line-height:1.2}
-@media screen and (min-width:900px){.main-row>.row-2>.col-1{padding:0 14%}
+@media screen and (min-width:900px){.main-row>.row-2>.col-1{padding:0 12%}
 }.main-row>.row-2>.col-1 .copy{margin-top:10px}
 .main-row>.row-2>.col-1 .copy h2{font-weight:300}
 .template-index{height:100%}
@@ -816,11 +816,12 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){.template-index>.row-1>.col-1 .learn-more a{border:1px solid white;color:#505a5b;background-color:white}
 .template-index>.row-1>.col-1 .learn-more a:hover{border:1px solid white;color:white;background-color:transparent}
 }.template-index>.row-1>.col-2{padding:0 20px 20px 20px}
-@media screen and (min-width:600px){.template-index>.row-1>.col-2{padding:2%}
+@media screen and (min-width:600px){.template-index>.row-1>.col-2{padding:2% 2% 3% 2%}
 }@media screen and (min-width:900px){.template-index>.row-1>.col-2{width:30%;float:right}
 }@media screen and (min-width:1200px){.template-index>.row-1>.col-2{width:350px}
 }.template-index>.row-1>.col-2 .button{display:block;margin:20px 0;text-align:center}
 .template-index>.row-1>.col-2 .button:first-child{margin:0 0 20px 0}
+.template-index>.row-1>.col-2 .button:last-child{margin:20px 0 0 0}
 .template-index>.row-1>.col-2 .button a{border:1px solid #505a5b;padding:10px;font-size:18px;text-transform:uppercase;display:block;text-decoration:none;color:#505a5b}
 .template-index>.row-1>.col-2 .button a:hover{border:1px solid #76c2b6;color:#76c2b6}
 @media screen and (min-width:600px){.template-index>.row-1>.col-2 .button a{border:1px solid white;color:white}

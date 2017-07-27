@@ -215,7 +215,7 @@
       @include flexbox-justify(space-between);
       @include flexbox-align-content(center);
       @include flexbox-align-items(center);
-      padding: 0 2% 0 14%;
+      padding: 0 2% 0 12%;
     }
     >.col-1 {
       @media screen and (min-width: $midwidth){
@@ -305,7 +305,7 @@
   >.row-2 {
     >.col-1 {
       @media screen and (min-width: $midwidth){
-        padding: 0 14%;
+        padding: 0 12%;
       }
       .copy {
         margin-top: 10px;
