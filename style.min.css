@@ -769,7 +769,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:600px){#page #content{width:calc(100% - 250px)}
 }#page #content #primary,#page #content #main{height:100%}
 .main-row{width:100%;margin-bottom:auto;padding:20px}
-@media screen and (min-width:600px){.main-row{padding:6% 2% 6% 14%}
+@media screen and (min-width:900px){.main-row{padding:6% 2% 6% 14%}
 }.main-row>.row-1{margin:0 0 30px 0}
 @media screen and (min-width:900px){.main-row>.row-1{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 }@media screen and (min-width:900px){.main-row>.row-1>.col-1{max-width:50%}

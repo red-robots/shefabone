@@ -3599,7 +3599,7 @@ html[xmlns] .flexslider .slides {
   width: 100%;
   margin-bottom: auto;
   padding: 20px; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     .main-row {
       padding: 6% 2% 6% 14%; } }
   .main-row > .row-1 {
