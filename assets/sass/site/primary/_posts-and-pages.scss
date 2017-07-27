@@ -64,7 +64,8 @@
                     font-size: 18px;
                     text-transform: uppercase;
                     &:hover {
-                        color: $color__shefa-gray;
+                        color: $color__shefa-green;
+                        border: 1px solid $color__shefa-green;
                     }
                     @media screen and (min-width: $tabwidth){
                         border: 1px solid white;
@@ -72,7 +73,8 @@
                         background-color: white;
                         &:hover {
                             border: 1px solid white;
-                            color: $color__shefa-gray;
+                            color: white;
+                            background-color: transparent;
                         }
                     }
                 }
@@ -114,7 +116,8 @@
                         color: white;
                         &:hover {
                             border: 1px solid white;
-                            color: white;
+                            background-color: white;
+                            color: $color__shefa-gray;
                         }
                     }
                 }

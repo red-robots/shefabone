@@ -92,7 +92,7 @@
   }
   #masthead {
     @include flexbox-flex(0,0,auto);
-    padding: 20px 30px;
+    padding: 20px 0 20px 30px;
     @media screen and (min-width: $tabwidth){
       width: 250px;
       border-right: 1px solid $color__shefa-gray;
@@ -101,6 +101,7 @@
       .logo {
         margin: 0 auto 30px auto;
         width: 100%;
+        padding: 0 30px 0 0;
         @media screen and (min-width: $tinywidth){
           width: 70%;
         }
@@ -124,17 +125,20 @@
             display: block;
           }
         }
-        button {
-          display: inline-block;
-          background-color: $color__shefa-gray;
-          color: white;
-          border: none;
-          text-shadow: none;
-          box-shadow: none;
-          padding: 10 20px;
-          font-size: 20px;
-          @media screen and (min-width: $tabwidth){
-            display: none;
+        >.button-wrapper {
+          padding: 0 30px 0 0;
+          button {
+            display: inline-block;
+            background-color: $color__shefa-gray;
+            color: white;
+            border: none;
+            text-shadow: none;
+            box-shadow: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            @media screen and (min-width: $tabwidth){
+              display: none;
+            }
           }
         }
         .menu-primary-container {
@@ -147,11 +151,18 @@
             padding: 0;
             li {
               display: block;
-              margin: 20px 0;
               a {
+                display: block;
                 color: inherit;
                 font-size: 20px;
                 text-decoration: none;
+                padding: 15px 30px 15px 0;
+                @media screen and (min-width: $tabwidth){
+                  &.active {
+                    padding: 15px 20px 15px 0;
+                    border-right: 10px solid $color__shefa-gray;
+                  }
+                }
                 &:hover {
                   color: $color__shefa-green;
                 }
@@ -163,6 +174,7 @@
       .social {
         text-align: center;
         margin: 20px 0 0 0;
+        padding: 0 30px 0 0;
         @media screen and (min-width: $tabwidth){
           text-align: left;
         }
@@ -193,7 +205,7 @@
   margin-bottom: auto;
   padding: 20px;
   @media screen and (min-width: $midwidth){
-    padding: 6% 2% 6% 14%;
+    padding: 6% 0;
   }
   >.row-1 {
     margin: 0 0 30px 0;
@@ -203,6 +215,7 @@
       @include flexbox-justify(space-between);
       @include flexbox-align-content(center);
       @include flexbox-align-items(center);
+      padding: 0 2% 0 14%;
     }
     >.col-1 {
       @media screen and (min-width: $midwidth){
@@ -277,7 +290,7 @@
             max-width: 100%;
             padding: 10px;
             color: white;
-            background-color: $color__shefa-blue;
+            background-color: $color__shefa-gray;
             border: none;
             text-shadow: none;
             box-shadow: none;
@@ -292,7 +305,7 @@
   >.row-2 {
     >.col-1 {
       @media screen and (min-width: $midwidth){
-        width: 60%;
+        padding: 0 14%;
       }
       .copy {
         margin-top: 10px;
