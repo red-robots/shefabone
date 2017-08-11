@@ -52,9 +52,13 @@ $background_image = get_field("background_image");
 		<?php if($bottom_buttons):?>
 			<aside class="col-2">
 				<?php foreach($bottom_buttons as $row):
-					if($row['button_link']&&$row['button_text']):?>
+					if(($row['button_link']||$row['button_link_file'])&&$row['button_text']):?>
 						<div class="button">
-							<a href="<?php echo $row['button_link'];?>">
+							<a href="<?php if($row['button_link_file']):
+								echo $row['button_link_file'];
+							else:
+								echo $row['button_link'];
+							endif;?>">
 								<?php echo $row['button_text'];?>
 							</a>
 						</div><!--.button-->
