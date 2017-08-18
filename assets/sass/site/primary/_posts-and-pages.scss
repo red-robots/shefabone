@@ -32,8 +32,9 @@
                             }
                             @media screen and (min-width: $midwidth){
                                 padding: 5% 0 3% 12%;
-                                width: 60%;
+                                width: 58%;
                                 float: left;
+                                max-width: 600px;
                             }
                             @media screen and (min-width: $widewidth){
                                 width: 50%;
@@ -51,8 +52,10 @@
                                 margin-top: 10px;
                                 @media screen and (min-width: $tabwidth){
                                     color: white;
+                                    font-size: 20px;
                                     & h2 {
                                         color: white;
+                                        font-size: 22px;
                                     }
                                 }
                             }
