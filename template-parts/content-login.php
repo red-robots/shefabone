@@ -27,11 +27,21 @@
 				<div class="copy">
 					<?php the_content();?>
 				</div><!--.copy-->
-				<?php shefa_wp_login_form();?>
+				<?php if(isset($_GET['login'])&&$_GET['login']==="failed"):?>
+					<div class="messages copy">
+						<p>We're sorry that combination isn't valid!</p>
+					</div>
+				<?php else: if(isset($_GET['login'])&&$_GET['login']==="empty"):?>
+					<div class="messages copy">
+						<p>Please enter your credentials!</p>
+					</div>
+					<?php endif;
+				endif;?>
+				<?php wp_login_form();?>
 				<?php $registration_title = get_field("registration_title");
 				if($registration_title):?>
 					<header>
-						<h1><?php echo $registration_title;?></h1>
+						<h2><?php echo $registration_title;?></h2>
 					</header>
 				<?php endif;?>
 				<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]');?>
