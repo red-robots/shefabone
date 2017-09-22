@@ -794,6 +794,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:900px){.main-row>.row-2>.col-1{padding:0 12%}
 }.main-row>.row-2>.col-1 .copy{margin-top:10px}
 .main-row>.row-2>.col-1 .copy h2{font-weight:300}
+.main-row>.row-2>.col-1 header h2{font-weight:300}
 .template-index{height:100%}
 .template-index>.flexslider{height:100%}
 .template-index>.flexslider .flex-viewport{height:100%}
