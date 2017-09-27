@@ -199,7 +199,7 @@ add_action('wp_logout','logout_redirect',0);
 		} elseif(in_array( 'administrator', $user->roles )){
 			return $redirect_to;
 		} elseif (in_array( 'customer', $user->roles )) {
-      $link = get_the_permalink( 413);//get order form
+      		$link = get_the_permalink( 413);//get order form
 			if ( $link ) {
 				return $link;
 			} else {

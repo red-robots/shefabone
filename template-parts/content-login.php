@@ -37,7 +37,7 @@
 					</div>
 					<?php endif;
 				endif;?>
-				<?php wp_login_form();?>
+				<?php shefa_wp_login_form();?>
 				<?php $registration_title = get_field("registration_title");
 				if($registration_title):?>
 					<header>
