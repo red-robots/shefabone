@@ -691,9 +691,7 @@ html[xmlns] .flexslider .slides{display:block}
 .loading .flex-viewport{max-height:300px}
 .carousel li{margin-right:5px}
 .flex-direction-nav{*height:0}
-.flex-direction-nav a{text-decoration:none;display:block;width:40px;height:40px;margin:-20px 0 0;position:absolute;top:50%;z-index:10;overflow:hidden;opacity:0;cursor:pointer;color:rgba(0,0,0,0.8);text-shadow:1px 1px 0 rgba(255,255,255,0.3);-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
-.flex-direction-nav a:before{font-family:"flexslider-icon";font-size:40px;display:inline-block;content:'\f001';color:rgba(0,0,0,0.8);text-shadow:1px 1px 0 rgba(255,255,255,0.3)}
-.flex-direction-nav a.flex-next:before{content:'\f002'}
+.flex-direction-nav a{text-decoration:none;display:block;width:40px;height:40px;font-size:40px;margin:-20px 0 0;position:absolute;top:50%;z-index:10;overflow:hidden;opacity:0;cursor:pointer;color:rgba(0,0,0,0.8);text-shadow:1px 1px 0 rgba(255,255,255,0.3);-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
 .flex-direction-nav .flex-prev{left:-50px}
 .flex-direction-nav .flex-next{right:-50px;text-align:right}
 .flexslider:hover .flex-direction-nav .flex-prev{opacity:.7;left:10px}
@@ -803,13 +801,20 @@ html[xmlns] .flexslider .slides{display:block}
 .template-index>.flexslider .flex-viewport ul.slides li.slide{height:100%}
 @media screen and (max-width:599px){.template-index>.flexslider .flex-viewport ul.slides li.slide{background-image:none !important}
 }@media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide{background-position:center;background-size:cover}
+}.template-index>.flexslider .flex-viewport ul.slides li.slide.slide-1>.row-1>.col-1{color:grey}
+.template-index>.flexslider .flex-viewport ul.slides li.slide.slide-1>.row-1>.col-1 .copy{color:grey}
+.template-index>.flexslider .flex-viewport ul.slides li.slide.slide-1>.row-1>.col-1 .copy h2{color:grey}
+@media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide.slide-1>.row-1>.col-1 .learn-more a{border:1px solid #505a5b;color:#505a5b;background-color:transparent}
+.template-index>.flexslider .flex-viewport ul.slides li.slide.slide-1>.row-1>.col-1 .learn-more a:hover{border:1px solid #505a5b;color:#505a5b;background-color:white}
+}@media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide.slide-1>.row-1>.col-2 .button a{border:1px solid #505a5b;color:#505a5b}
+.template-index>.flexslider .flex-viewport ul.slides li.slide.slide-1>.row-1>.col-2 .button a:hover{border:1px solid #505a5b;background-color:white;color:#505a5b}
 }.template-index>.flexslider .flex-viewport ul.slides li.slide>img.mobile{display:block;width:100%}
 @media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide>img.mobile{display:none}
-}.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1{padding:20px}
+}.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1{padding:20px 60px}
 @media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1{padding:4%;color:white}
 }@media screen and (min-width:900px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1{padding:5% 0 3% 12%;width:58%;float:left;max-width:600px}
 }@media screen and (min-width:1500px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1{width:50%;max-width:650px}
-}.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 header h1{margin:0;font-size:35px}
+}.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 header h1{margin:0;font-size:25px}
 @media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 header h1{font-size:50px}
 }.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 .copy{margin-top:10px}
 @media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 .copy{color:white;font-size:20px}
@@ -820,7 +825,7 @@ html[xmlns] .flexslider .slides{display:block}
 .template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 .learn-more a:hover{color:#76c2b6;border:1px solid #76c2b6}
 @media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 .learn-more a{border:1px solid white;color:#505a5b;background-color:white}
 .template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-1 .learn-more a:hover{border:1px solid white;color:white;background-color:transparent}
-}.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-2{padding:0 20px 20px 20px}
+}.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-2{padding:0 60px 20px 60px}
 @media screen and (min-width:600px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-2{padding:2% 2% 3% 2%}
 }@media screen and (min-width:900px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-2{width:30%;float:right}
 }@media screen and (min-width:1200px){.template-index>.flexslider .flex-viewport ul.slides li.slide>.row-1>.col-2{width:350px}

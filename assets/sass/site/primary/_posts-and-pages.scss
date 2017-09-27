@@ -16,6 +16,48 @@
                         background-position: center;
                         background-size: cover;
                     }
+                    &.slide-1 {
+                        >.row-1 {
+                            >.col-1 {
+                                color: grey;
+                                .copy {
+                                    color: grey;
+                                    & h2 {
+                                        color: grey;
+                                    }
+                                }
+                                .learn-more {
+                                    a {
+                                        @media screen and (min-width: $tabwidth){
+                                            border: 1px solid $color__shefa-gray;
+                                            color: $color__shefa-gray;
+                                            background-color: transparent;
+                                            &:hover {
+                                                border: 1px solid $color__shefa-gray;
+                                                color: $color__shefa-gray;
+                                                background-color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            >.col-2 {
+                                .button {
+                                    a { 
+                                        @media screen and (min-width: $tabwidth){
+                                            border: 1px solid $color__shefa-gray;
+                                            color: $color__shefa-gray;
+                                            &:hover {
+                                                border: 1px solid $color__shefa-gray;
+                                                background-color: white;
+                                                color: $color__shefa-gray;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     >img.mobile {
                         display: block;
                         width: 100%;
@@ -25,7 +67,7 @@
                     }
                     >.row-1 {
                         >.col-1 {
-                            padding: 20px;
+                            padding: 20px 60px;
                             @media screen and (min-width: $tabwidth){
                                 padding: 4%;
                                 color: white;
@@ -43,7 +85,7 @@
                             header {
                                 h1 {
                                     margin: 0;
-                                    font-size: 35px;
+                                    font-size: 25px;
                                     @media screen and (min-width: $tabwidth){
                                         font-size: 50px;
                                     }
@@ -94,7 +136,7 @@
                             }
                         }
                         >.col-2 {
-                            padding: 0 20px 20px 20px;
+                            padding: 0 60px 20px 60px;
                             @media screen and (min-width: $tabwidth){
                                 padding: 2% 2% 3% 2%;
                             }

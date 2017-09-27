@@ -17,12 +17,14 @@
 	if($slides):?>
 		<div class="flexslider">
 			<ul class="slides">
-				<?php foreach($slides as $row):?>
-					<?php $learn_more_link = $row['learn_more_link'];
+				<?php $i=0;
+				foreach($slides as $row):?>
+					<?php $i++;
+					$learn_more_link = $row['learn_more_link'];
 					$learn_more_text = $row['learn_more_text'];
 					$background_image = $row['background_image'];
 					$copy = $row['copy'];?>
-					<li class="slide" <?php 
+					<li class="slide <?php echo "slide-{$i}";?>" <?php 
 						if($background_image):
 							echo 'style="background-image: url('.$background_image['url'].');"';
 						endif;
