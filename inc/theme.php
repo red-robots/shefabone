@@ -196,7 +196,7 @@ add_action('wp_logout','logout_redirect',0);
 			} else {
 				return $redirect_to;
 			}
-		} elseif(in_array( 'administrator', $user->roles )){
+		} elseif(in_array( 'administrator', $user->roles )||in_array( 'shefabone', $user->roles )){
 			return $redirect_to;
 		} elseif (in_array( 'customer', $user->roles )) {
       		$link = get_the_permalink( 413);//get order form
